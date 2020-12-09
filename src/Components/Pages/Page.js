@@ -16,17 +16,27 @@ const [foundItem, setFoundItem] = useState();
     })
       .then((res) => res.json())
       .then((json) => {
-        const found = json.find(({id}) => (id === pageId));
+        const found = json.find(({slug}) => (slug === pageId ));
         setFoundItem(found);
       });
   }, [pageId]);
 
-  if (!foundItem) return <div />;
+	
+	
+  if (!foundItem) return <div className="404" />;
   return (
     <>
       <h1 key={foundItem.id}>
-        {foundItem.title && foundItem.title.rendered ? foundItem.title.rendered: ''}
-      </h1>
+	  		{foundItem.title && foundItem.title.rendered ? foundItem.title.rendered: ''}
+	  </h1>
+	  
+	  <div dangerouslySetInnerHTML={{__html: foundItem.content.rendered}}></div>
+	  
+	 
+      
+	  
+	  
+      
 	  
 	  
     </>
@@ -39,12 +49,18 @@ const [foundItem, setFoundItem] = useState();
 
 function Page() {
 const location = useLocation();
-const [pageId, setPageId] = useState(null);
+const [pageId, setPageId] = useState();
+
+
+	
 useEffect(()=> {
   if(location.state){
-    setPageId(parseInt(location.state.pageId, 10));
+    setPageId(window.location.pathname.slice(1));
   }
-}, [location]);
+}, [window.location.pathname.slice(1)]);
+	
+	
+	
   return (
     <div className="container-fluid">
       <FetchContent pageId={pageId} />

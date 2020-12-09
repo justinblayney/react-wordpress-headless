@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-wordpress-headless/static/css/main.dc21724c.chunk.css",
+    "main.js": "/react-wordpress-headless/static/js/main.85c3f064.chunk.js",
+    "main.js.map": "/react-wordpress-headless/static/js/main.85c3f064.chunk.js.map",
+    "runtime-main.js": "/react-wordpress-headless/static/js/runtime-main.5b43a748.js",
+    "runtime-main.js.map": "/react-wordpress-headless/static/js/runtime-main.5b43a748.js.map",
+    "static/js/2.c0b6f4f8.chunk.js": "/react-wordpress-headless/static/js/2.c0b6f4f8.chunk.js",
+    "static/js/2.c0b6f4f8.chunk.js.map": "/react-wordpress-headless/static/js/2.c0b6f4f8.chunk.js.map",
+    "static/js/3.18596047.chunk.js": "/react-wordpress-headless/static/js/3.18596047.chunk.js",
+    "static/js/3.18596047.chunk.js.map": "/react-wordpress-headless/static/js/3.18596047.chunk.js.map",
+    "index.html": "/react-wordpress-headless/index.html",
+    "static/css/main.dc21724c.chunk.css.map": "/react-wordpress-headless/static/css/main.dc21724c.chunk.css.map",
+    "static/js/2.c0b6f4f8.chunk.js.LICENSE.txt": "/react-wordpress-headless/static/js/2.c0b6f4f8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b43a748.js",
+    "static/js/2.c0b6f4f8.chunk.js",
+    "static/css/main.dc21724c.chunk.css",
+    "static/js/main.85c3f064.chunk.js"
+  ]
+}

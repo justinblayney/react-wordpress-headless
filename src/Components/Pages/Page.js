@@ -46,12 +46,23 @@ function Page() {
 
 const [pageId, setPageId] = useState();
 
-
+const thisPage = window.location.pathname.slice(1);	
 	
-useEffect(()=> {
-  setPageId(window.location.pathname.slice(1));
-  
-}, []);
+	
+useEffect(( )=> {
+	
+	if((thisPage  === "") || (thisPage  === "react-wordpress-headless") ){
+		setPageId('home');
+	
+			
+ 	} else {
+		setPageId(thisPage);
+		
+	}
+}, [thisPage]);
+	
+	
+
 	
 	
 	

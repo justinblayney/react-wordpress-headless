@@ -26,36 +26,6 @@ header {
 		padding: 0;
 	}
 	
-	nav{
-
-		position: absolute;
-		top: 50%; right:15px;
-		@include translateX(-50%);
-		
-		
-		ul li{
-			list-style-type: none;
-			display: inline-block;
-			margin-right: 15px;
-			
-			&.last {
-				margin: 0;
-			}
-			a {
-				font-size: 18px;
-			    line-height: normal;
-				color: $white; 
-			}
-			a:hover {
-				font-size: 18px;
-			    line-height: normal;
-				color: $red; 
-				text-decoration: none;
-			}
-			
-		}
-		
-	}
 	
 	
 	

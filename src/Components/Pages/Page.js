@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 
 // fetches  Page data from JSON (Located in public directory)
-
+// PageId is a slug that comes from Page.js function
 
 function FetchContent({ pageId }) {
 const [foundItem, setFoundItem] = useState();
@@ -32,12 +32,7 @@ const [foundItem, setFoundItem] = useState();
 	  
 	  <div dangerouslySetInnerHTML={{__html: foundItem.content.rendered}}></div>
 	  
-	 
-      
-	  
-	  
-      
-	  
+
 	  
     </>
   );
@@ -48,16 +43,15 @@ const [foundItem, setFoundItem] = useState();
 // sends pageId to FetchContent to grab the content for the page
 
 function Page() {
-const location = useLocation();
+
 const [pageId, setPageId] = useState();
 
 
 	
 useEffect(()=> {
-  if(location.state){
-    setPageId(window.location.pathname.slice(1));
-  }
-}, [window.location.pathname.slice(1)]);
+  setPageId(window.location.pathname.slice(1));
+  
+});
 	
 	
 	

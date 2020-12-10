@@ -87,10 +87,7 @@ function MyNav() {
 	  	     	 
 	  				
 	  				 to={{
-					  pathname: item.slug,
-					  state: {
-						pageId: item.slug
-					  }
+					  pathname: item.slug
 					}}
 				  >
 					{item.title}
@@ -121,10 +118,7 @@ function MyNav() {
 	  					key={childItem.ID}
 	  					className="dropdown-item"
                         to={{
-                          pathname: childItem.slug,
-                          state: {
-                            pageId: childItem.slug
-                          }
+                          pathname: childItem.slug
                         }}
                       >
                         {childItem.title}

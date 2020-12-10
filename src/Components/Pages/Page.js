@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import {  } from "react-router-dom";
 
 
 // fetches  Page data from JSON (Located in public directory)
@@ -51,7 +51,7 @@ const [pageId, setPageId] = useState();
 useEffect(()=> {
   setPageId(window.location.pathname.slice(1));
   
-});
+}, []);
 	
 	
 	

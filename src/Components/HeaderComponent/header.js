@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import MyNav from './Nav';
-
-
+import Nav from './Nav';
 
 
 
@@ -15,7 +13,7 @@ render() {
 	  	<div className="row">
 			 <div className="col-12">
 	  			<div className="logo">Logo</div>
-				  <MyNav />
+				  <Nav />
 					
 					
 			</div> 

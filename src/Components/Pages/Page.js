@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {  } from "react-router-dom";
+import {Helmet} from "react-helmet";
+
 
 
 // fetches  Page data from JSON (Located in public directory)
@@ -21,11 +23,19 @@ const [foundItem, setFoundItem] = useState();
       });
   }, [pageId]);
 
-	
+
 	
   if (!foundItem) return <div className="404" />;
   return (
     <>
+	   <Helmet>
+                <meta charSet="utf-8" />
+                <title>{foundItem.acf.seotitle && foundItem.acf.seotitle ? foundItem.acf.seotitle: ''}</title>
+	   			<meta name="description" content={foundItem.acf.seodescription && foundItem.acf.seodescription ? foundItem.acf.seodescription: ''} />
+	  			<meta name="robots" content="index, follow" />
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
+	  
       <h1 key={foundItem.id}>
 	  		{foundItem.title && foundItem.title.rendered ? foundItem.title.rendered: ''}
 	  </h1>

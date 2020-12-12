@@ -1,5 +1,5 @@
 {
-  "homepage": "http://justinblayney.github.io/",
+  "homepage": "https://react.justinblayney.com/",
   "name": "justinblayney",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,8 @@
     "react-async": "^10.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "save": "^2.4.0",

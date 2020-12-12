@@ -4,18 +4,23 @@ import {
 	Route
 } from 'react-router-dom';
 
-
 import './Assets/css/default.min.css';
 import Header from './Components/HeaderComponent/header';
 import Footer from './Components/FooterComponent/footer';
 import PageRoutes from './Components/Pages/PageRoutes';
-import HomePage from './Components/Pages/homePage';
+import Page from './Components/Pages/Page';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-CJL8QGMEG1', { standardImplementation: true });
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 // this dynamically loads all page routes in advance 
 
 
 class App extends Component {
 
+	
+	
 	render() {
 
 		return(
@@ -23,7 +28,7 @@ class App extends Component {
 			 <Router> 
 				<div className="App">
 					<Header />		
-						<Route exact path="/" component={HomePage}  />
+						<Route exact path="/" component={Page}  />
 					    
 						<PageRoutes />
 

@@ -11,7 +11,7 @@ import PageRoutes from './Components/Pages/PageRoutes';
 import Page from './Components/Pages/Page';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('G-CJL8QGMEG1', { standardImplementation: true });
+ReactGA.initialize('UA-10236570-1', { standardImplementation: true });
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 // this dynamically loads all page routes in advance 
